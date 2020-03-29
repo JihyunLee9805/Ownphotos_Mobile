@@ -1,2 +1,2 @@
-Test Merge
-IWILLGETCONFLICT
+Test Merge 
+It will conflict
