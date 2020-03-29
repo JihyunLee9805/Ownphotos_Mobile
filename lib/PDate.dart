@@ -56,7 +56,7 @@ class DResults {
 
 class Photos {
   String imagehash;
-  int timestamp;
+  String timestamp;
 
   Photos(
       {
