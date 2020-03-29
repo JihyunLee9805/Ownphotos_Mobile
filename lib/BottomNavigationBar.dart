@@ -173,6 +173,7 @@ class _BottomNavigationBar extends State<BottomNavigation>{
 
 class Me extends StatelessWidget {
   //HTTP연결해서 앨범개수와 날짜별 이미지 가져오기
+  
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -188,6 +189,7 @@ class Me extends StatelessWidget {
 
 class Home extends StatelessWidget {
   //HTTP연결해서 앨범개수와 날짜별 이미지 가져오기
+  
   @override
   Widget build(BuildContext context) {
     Map<String, String> headersMap = {
@@ -510,7 +512,8 @@ class PeopleState extends State<People> {
       else if (snapshot.hasError) {
         wid = 
           Icon(
-            Icons.error_outline,
+            
+			Icons.error_outline,
             color: Colors.red,
             size: 60,
           );
@@ -544,6 +547,7 @@ List<Container> _buildGridTileList(int count, Map<String, String> headersMap,Bui
     )
 );
 }
+
 
 List<Container> _buildGridTileList2(int count, Map<String, String> headersMap,BuildContext context) { 
   return List.generate(
