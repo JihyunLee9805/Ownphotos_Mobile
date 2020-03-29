@@ -56,18 +56,18 @@ class DResults {
 
 class Photos {
   String imagehash;
-  String timestamp;
+  String exif_timestamp;
 
   Photos(
       {
         this.imagehash,
-        this.timestamp,
+        this.exif_timestamp;,
       });
 
   factory Photos.fromJson(Map<String, dynamic> parsedJson) {
     return Photos(
       imagehash: parsedJson["image_hash"],
-      timestamp: parsedJson["exif_timestamp"],
+      exif_timestamp: parsedJson["exif_timestamp"],
     );
   }
 }
