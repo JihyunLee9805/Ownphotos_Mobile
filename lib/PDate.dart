@@ -6,7 +6,7 @@ class PDate {
 
   PDate(
       {
-       this.count,
+        this.count,
         //this.next,
         //this.previous,
         this.results,
@@ -20,7 +20,7 @@ class PDate {
       //next: json["next"],
       //previous: json["previous"],
       results: resultsList,
-     count: cnt,
+      count: cnt,
     );
   }
 }
@@ -56,18 +56,18 @@ class DResults {
 
 class Photos {
   String imagehash;
-  //String exif_timestamp;
+  String exif_timestamp;
 
   Photos(
       {
         this.imagehash,
-        //this.exif_timestamp,
+        this.exif_timestamp,
       });
 
   factory Photos.fromJson(Map<String, dynamic> parsedJson) {
     return Photos(
       imagehash: parsedJson["image_hash"],
-      //exif_timestamp: parsedJson["exif_timestamp"],
+      exif_timestamp: parsedJson["exif_timestamp"],
     );
   }
 }
